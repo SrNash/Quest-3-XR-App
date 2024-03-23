@@ -1,10 +1,14 @@
 /*-----------------------------
  -------------------------------
- Creation Date: 22/03/24
+ Creation Date: 23/03/24
  Author: Victor
  Description: Quest 3 XR App
 --------------------------------
 -----------------------------*/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Dev.Bakata{
 
@@ -12,8 +16,11 @@ namespace Dev.Bakata{
 	/// Interface
 	/// </summary>
 
-	public interface IRotatable
+	public interface IDamagable 
 	{
-		public abstract void RotateAroundSelf();
+		public bool WasHitted { get; set; }
+		void TakeDamage();
+		public void Dead();
 	}
+	
 }

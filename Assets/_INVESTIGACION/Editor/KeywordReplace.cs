@@ -1,8 +1,8 @@
 /*-----------------------------
  -------------------------------
- Creation Date: #CREATIONDATE#
- Author: #DEVELOPER#
- Description: #PROJECTNAME#
+ Creation Date: 22/03/24
+ Author: Victor
+ Description: Quest 3 XR App
 --------------------------------
 -----------------------------*/
 
@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-public class KeywordReplace : UnityEditor.AssetModificationProcessor {
+public class KeywordReplace : AssetModificationProcessor {
 	public static void OnWillCreateAsset(string path)
 	{
 		path = path.Replace(".meta", "");
@@ -26,7 +26,7 @@ public class KeywordReplace : UnityEditor.AssetModificationProcessor {
 
 		string fileContent = File.ReadAllText(path);
 
-		fileContent = fileContent.Replace("#CEATIONDATE#", System.DateTime.Today.ToString("dd/MM/yy") + "");
+		fileContent = fileContent.Replace("#CREATIONDATE#", System.DateTime.Today.ToString("dd/MM/yy") + "");
 		fileContent = fileContent.Replace("#PROJECTNAME#", PlayerSettings.productName);
 		fileContent = fileContent.Replace("#DEVELOPER#", System.Environment.UserName);
 

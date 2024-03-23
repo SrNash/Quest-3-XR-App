@@ -1,8 +1,8 @@
 /*-----------------------------
  -------------------------------
- Creation Date: #CREATIONDATE#
- Author: #DEVELOPER#
- Description: #PROJECTNAME#
+ Creation Date: 23/03/24
+ Author: Victor
+ Description: Quest 3 XR App
 --------------------------------
 -----------------------------*/
 

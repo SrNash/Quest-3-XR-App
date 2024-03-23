@@ -44,7 +44,7 @@ namespace Dev.Bakata{
         // Start is called before the first frame update
         void Start()
 		{
-			InitPool();
+			
 		}
 
 		// Update is called once per frame
@@ -96,15 +96,15 @@ namespace Dev.Bakata{
         //Metodo para obtener una Ball del ObjectPool
         public GameObject GetBall()
 		{
-			foreach (GameObject ball in ballsPooled)
-			{
-				if (!ball.activeInHierarchy)
-				{
-					return ball;
-				}
-			}
-			return null;
-		}
+            for (int i = 0; i < ballsPooled.Count; i++)
+            {
+                if (!ballsPooled[i].activeInHierarchy)
+                {
+                    return ballsPooled[i];
+                }
+            }
+            return null;
+        }
 
 		//Metodo para activar una Ball en una posicion especifica
 		public void ShootBall(Vector3 shootPosition)
@@ -121,14 +121,8 @@ namespace Dev.Bakata{
 					//Aplicamos una fuerza hacia adelante al proyectil
 					rb.AddForce(ball.transform.forward * force, ForceMode.Impulse);
 				}
-
-				//Iniciar la Coroutina para retornar la Ball a la posicion de ObjectPool
-				//después de un determinado tiempo
-				if (returnToPool != null)
-				{
-					StopCoroutine(returnToPool);
-				}
-				returnToPool = StartCoroutine(ReturnBall(ball));
+				
+				StartCoroutine(ReturnBall(ball));
 			}
 		}
         #endregion

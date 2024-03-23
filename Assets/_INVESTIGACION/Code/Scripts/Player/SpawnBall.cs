@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Dev.Bakata{
 
@@ -43,12 +44,14 @@ namespace Dev.Bakata{
 		// Update is called once per frame
 		void Update()
 		{
-			if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
-			{
-				ballsPool.force = 2.5f;
-				ballsPool.ShootBall(transform.position);
-			}
+			/// Eliminar la parte del diparo con el raton
+			/// y comprobar el funcionamiento del ObjectPool y del disparo.
+			/// 
+
+			Shoot();
 		}
+
+		
 
 		// Awake is called when the script is
 		// first loaded or when an object is
@@ -63,12 +66,20 @@ namespace Dev.Bakata{
 		{
 			
 		}
-            
-		// LateUpdate is called after all Update functions have been called
-		#endregion
-		#region Private Methods
-		#endregion            
-		#region Public Methods
-		#endregion
-	}
+
+        // LateUpdate is called after all Update functions have been called
+        #endregion
+        #region Private Methods
+        private void Shoot()
+        {
+            if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) || Input.GetButtonDown("Fire1"))
+            {
+                ballsPool.force = 2.5f;
+                ballsPool.ShootBall(transform.position);
+            }
+        }
+        #endregion
+        #region Public Methods
+        #endregion
+    }
 }

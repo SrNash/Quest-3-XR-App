@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballsPooled: []
-  ballPrefab: {fileID: 0}
+  ballPrefab: {fileID: 3403100804199030315, guid: 9b6e2527b6a2b7442aaf71350eb9d0dd, type: 3}
   poolSize: 24
   force: 0
-  timeToReturn: 5
+  timeToReturn: 3

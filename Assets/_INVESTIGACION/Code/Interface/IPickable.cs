@@ -18,8 +18,16 @@ namespace Dev.Bakata{
 
 	public interface IPickable
 	{
-		public bool InReach { get; set; }
-		public void PickUp();
+        #region Private Field
+        #endregion
+        #region Public Fields
+        public bool InReach { get; set; }
+        #endregion
+        #region Private Methods
+        #endregion
+        #region Public Methods
+        public void PickUp();
 		public void DropItem();
-	}
+        #endregion
+    }
 }

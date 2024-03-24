@@ -1,8 +1,8 @@
 /*-----------------------------
  -------------------------------
- Creation Date: 23/03/24
- Author: Victor
- Description: Quest 3 XR App
+ Creation Date: #CREATIONDATE#
+ Author: #DEVELOPER#
+ Description: #PROJECTNAME#
 --------------------------------
 -----------------------------*/
 
@@ -10,25 +10,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dev.Bakata{
+namespace Dev.Bakata
+{
+    #ROOTNAMESPACEBEGIN#
 
-	/// <summary>
-	/// Interface
-	/// </summary>
+    /// <summary>
+    /// 
+    /// </summary>
 
-	public interface IDamagable 
-	{
+    public interface #SCRIPTNAME#
+    {
         #region Private Fields
+
         #endregion
         #region Public Fields
-        public bool WasHitted { get; set; }
+
         #endregion
         #region Private Methods
+
         #endregion
         #region Public Methods
-        public void TakeDamage();
-		public void Dead();
+
         #endregion
+
     }
-	
 }
+#ROOTNAMESPACEEND#

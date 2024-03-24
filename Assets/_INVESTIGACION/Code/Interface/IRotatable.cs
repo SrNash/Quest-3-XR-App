@@ -14,6 +14,8 @@ namespace Dev.Bakata{
 
 	public interface IRotatable
 	{
-		public abstract void RotateAroundSelf();
-	}
+        #region Public Methods
+        public abstract void RotateAroundSelf();
+        #endregion
+    }
 }

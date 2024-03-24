@@ -1,0 +1,30 @@
+/*-----------------------------
+ -------------------------------
+ Creation Date: #CREATIONDATE#
+ Author: #DEVELOPER#
+ Description: #PROJECTNAME#
+--------------------------------
+-----------------------------*/
+
+using UnityEngine;
+
+namespace Dev.Bakata{
+    #ROOTNAMESPACEBEGIN#
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [System.Serializable]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+
+        #region Fields
+        #endregion
+
+
+        #region Public API
+        #endregion
+    }
+}
+
+#ROOTNAMESPACEEND#

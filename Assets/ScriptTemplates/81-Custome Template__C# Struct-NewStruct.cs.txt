@@ -1,0 +1,24 @@
+/*-----------------------------
+ -------------------------------
+ Creation Date: #CREATIONDATE#
+ Author: #DEVELOPER#
+ Description: #PROJECTNAME#
+--------------------------------
+-----------------------------*/
+
+using System;
+
+namespace Dev.Bakata
+{
+    #ROOTNAMESPACEBEGIN#
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public struct #SCRIPTNAME#
+    {
+        
+    }
+
+}
+    #ROOTNAMESPACEEND#

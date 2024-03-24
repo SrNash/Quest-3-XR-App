@@ -1,8 +1,8 @@
 /*-----------------------------
  -------------------------------
- Creation Date: #CREATIONDATE#
- Author: #DEVELOPER#
- Description: #PROJECTNAME#
+ Creation Date: 24/03/24
+ Author: victo
+ Description: Quest 3 XR App
 --------------------------------
 -----------------------------*/
 
@@ -10,60 +10,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dev.Bakata{
+namespace Dev.Bakata
+{
 
-	/// <summary>
-	/// 
-	/// </summary>
+    /// <summary>
+    /// 
+    /// </summary>
 
-	public class IMovable : MonoBehaviour
-	{
-		#region Static Fields
-		#endregion
-		#region Const Field
-		#endregion
-		#region Param Fields
-		#endregion
-		#region Private Fields
-		#endregion
-		#region Public Fields
-		#endregion
-		#region Lifecycle
-		#endregion
-		#region Public API
-		#endregion
-		#region Unity Methods
-		// Start is called before the first frame update
-		void Start()
-		{
-			
-		}
+    public interface IMovable
+    {
+        #region Private Fields
 
-		// Update is called once per frame
-		void Update()
-		{
-			
-		}
+        #endregion
+        #region Public Fields
 
-		// Awake is called when the script is
-		// first loaded or when an object is
-		// attached to is instantiated
-		void Awake()
-		{
-			
-		}
-	    
-		// FixedUpdate is called at fixed time intervals
-		void FixedUpdate()
-		{
-			
-		}
-            
-		// LateUpdate is called after all Update functions have been called
-		#endregion
-		#region Private Methods
-		#endregion            
-		#region Public Methods
-		#endregion
-	}
+        #endregion
+        #region Private Methods
+
+        #endregion
+        #region Public Methods
+
+        #endregion
+
+    }
 }

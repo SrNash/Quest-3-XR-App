@@ -1,0 +1,25 @@
+/*-----------------------------
+ -------------------------------
+ Creation Date: #CREATIONDATE#
+ Author: #DEVELOPER#
+ Description: #PROJECTNAME#
+--------------------------------
+-----------------------------*/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+	    #ROOTNAMESPACEBEGIN#
+namespace Dev.Bakata{
+
+	/// <summary>
+	/// 
+	/// </summary>
+
+	public class #SCRIPTNAME# : MonoBehaviour
+	{
+            #NOTRIM#
+	}
+}
+	#ROOTNAMESPACEEND#

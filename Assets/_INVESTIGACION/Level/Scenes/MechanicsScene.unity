@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 636204270}
   - component: {fileID: 636204269}
   m_Layer: 0
-  m_Name: Passthrough
+  m_Name: OVRPassthroughLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,12 +1479,12 @@ GameObject:
   - component: {fileID: 1675537628}
   - component: {fileID: 1675537627}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: OVRPassthroughLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1675537627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,7 +1963,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 704893811}
   - {fileID: 108720538}
-  - {fileID: 636204270}
   - {fileID: 878784458}
   - {fileID: 2131406045}
   - {fileID: 501415780}
@@ -1972,8 +1971,9 @@ SceneRoots:
   - {fileID: 715267220}
   - {fileID: 360907012}
   - {fileID: 679453812}
+  - {fileID: 636204270}
+  - {fileID: 1675537628}
   - {fileID: 1281811496}
   - {fileID: 2690291626690391855}
   - {fileID: 3264188735067607168}
   - {fileID: 1563125610}
-  - {fileID: 1675537628}

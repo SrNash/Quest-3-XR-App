@@ -1,7 +1,7 @@
 /*-----------------------------
  -------------------------------
- Creation Date: 23/03/24
- Author: Victor
+ Creation Date: 24/03/24
+ Author: victo
  Description: Quest 3 XR App
 --------------------------------
 -----------------------------*/
@@ -10,25 +10,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dev.Bakata{
+namespace Dev.Bakata
+{
 
-	/// <summary>
-	/// Interface
-	/// </summary>
+    /// <summary>
+    /// 
+    /// </summary>
 
-	public interface IDamagable 
-	{
+    public interface NewInterface
+    {
         #region Private Fields
+
         #endregion
         #region Public Fields
-        public bool WasHitted { get; set; }
+
         #endregion
         #region Private Methods
+
         #endregion
         #region Public Methods
-        public void TakeDamage();
-		public void Dead();
+
         #endregion
+
     }
-	
 }

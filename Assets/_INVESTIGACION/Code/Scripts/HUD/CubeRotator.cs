@@ -20,23 +20,11 @@ namespace Dev.Bakata{
 
 	public class CubeRotator : MonoBehaviour, IRotatable
 	{
-		#region Static Fields
-		#endregion
-		#region Const Field
-		#endregion
-		#region Param Fields
-		#endregion
 		#region Private Fields
 		[Tooltip("Reference to the Cube GameObject that rotate arouns delf.")]
 		[SerializeField] private GameObject cubeGO;
 		[SerializeField] private float rotationSpeed;
 		private float smoothSpeed = 0.0125f;
-		#endregion
-		#region Public Fields
-		#endregion
-		#region Lifecycle
-		#endregion
-		#region Public API
 		#endregion
 		#region Unity Methods
 		// Start is called before the first frame update
@@ -74,7 +62,7 @@ namespace Dev.Bakata{
         public void RotateAroundSelf()
         {
 			float rotationSmoothedSpeed = rotationSpeed * smoothSpeed;
-			cubeGO.transform.RotateAround(Vector3.up,rotationSmoothedSpeed);
+			cubeGO.transform.Rotate(Vector3.up,rotationSmoothedSpeed);
         }
         #endregion
     }

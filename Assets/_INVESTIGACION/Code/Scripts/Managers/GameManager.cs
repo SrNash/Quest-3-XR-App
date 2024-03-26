@@ -14,7 +14,7 @@ using UnityEngine.SceneManagement;
 namespace Dev.Bakata{
 
 	/// <summary>
-	/// 
+	/// GameManager, controlará o bien la escena o bien el juego
 	/// </summary>
 
 	public class GameManager : MonoBehaviour
@@ -22,8 +22,13 @@ namespace Dev.Bakata{
 		#region Enums
 		#endregion
 		#region Static Fields
+		private static GameManager instance;
+		public static GameManager Instance { get { return instance; } }
 		#endregion
 		#region Private Fields
+		[SerializeField] private int targetFrameRate;
+		[SerializeField] private string sceneName;
+		[SerializeField] private string nextSceneName;
 		#endregion
 		#region Public Fields
         #endregion
@@ -35,7 +40,7 @@ namespace Dev.Bakata{
         // Start is called before the first frame update
         void Start()
 		{
-			
+			Application.targetFrameRate = targetFrameRate;
 		}
 
 		// Update is called once per frame
@@ -49,7 +54,21 @@ namespace Dev.Bakata{
 		// attached to is instantiated
 		void Awake()
 		{
-			
+			if (sceneName != nextSceneName)
+			{
+				if (instance == null)
+				{
+					instance = this;
+				}
+				else
+				{
+					DontDestroyOnLoad(gameObject);
+				}
+			}
+			else if (sceneName == nextSceneName)
+			{
+				Destroy(this.gameObject);
+			}
 		}
 	    
 		// FixedUpdate is called at fixed time intervals

@@ -377,6 +377,103 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Textures: []
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 60
+      m_Height: 60
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 20
+      m_Height: 20
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -747,7 +844,23 @@ PlayerSettings:
   webGLWebAssemblyTable: 0
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK;AMPLIFY_SHADER_EDITOR
+    Bratwurst: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    GameCoreScarlett: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    LinuxHeadlessSimulation: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    QNX: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    Standalone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    Windows Store Apps: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    iPhone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
+    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;ULTIMATEXR_USE_OCULUS_SDK
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

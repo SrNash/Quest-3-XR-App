@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 213fa74f635ff9645b682f2089b3438b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MaskMap: {fileID: 2800000, guid: 0b9c639a6f9ebd148979ec3984eeb5c2, type: 3}
+  - _EmissiveRVertDispMaskG: {fileID: 2800000, guid: d5a685f76510ca54da03f75379f2c0aa, type: 3}
+  - _DistortionNormal: {fileID: 2800000, guid: 4759ebc96fa0cab4289256170b390446, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
